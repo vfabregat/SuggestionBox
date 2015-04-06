@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Shrew.Web.Infrastructure.SuggestionsBox.IndexModel>
+
+@{
+    ViewBag.Title = "Open suggestions boxes";
+}
+
+<div class="container text-center">
+    <h1>Open suggestions boxes</h1>
+
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-6">
+                <div class="suggestion-box">
+                    <i class=" fa-4x fa fa-inbox"></i>
+                    <h2>
+                        @Html.ActionLink(item.Name, "Details", new { name = item.NameSlug, id = item.Id })
+                    </h2>
+                    <section>
+                        @Html.LabelFor(model => item.Suggestions) : <span class="badge">@item.Suggestions</span>
+                    </section>
+                    <footer class="bottom-align-text">
+
+                        <span>@Html.LabelFor(m => item.CreationDate) @Html.DisplayFor(m => item.CreationDate)</span>
+                        <div class="clearfix"></div>
+                        <span>@Html.LabelFor(m => item.Owner) @Html.DisplayFor(m => item.Owner)</span>
+                    </footer>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
