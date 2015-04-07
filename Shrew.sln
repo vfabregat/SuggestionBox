@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shrew.Web", "src\Shrew.Web\Shrew.Web.csproj", "{08F3A801-A588-421C-B2D0-3A91F3373333}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shrew.Web.Test", "tests\Shrew.Web.Test\Shrew.Web.Test.csproj", "{C115AC0F-ABBB-44EA-B11D-62E15F090248}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shrew.Web.Test", "src\Shrew.Web.Test\Shrew.Web.Test.csproj", "{C115AC0F-ABBB-44EA-B11D-62E15F090248}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8565971B-CF6F-4F96-BC13-10075E195BD9}"
 	ProjectSection(SolutionItems) = preProject
