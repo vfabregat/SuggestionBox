@@ -1,5 +1,4 @@
-﻿using FluentValidation;
-using MediatR;
+﻿using MediatR;
 using StructureMap.Configuration.DSL;
 
 namespace Shrew.Web.Infrastructure
@@ -15,7 +14,6 @@ namespace Shrew.Web.Infrastructure
 
                 scan.AddAllTypesOf(typeof(IRequestHandler<,>));
                 scan.AddAllTypesOf(typeof(IAsyncRequestHandler<,>));
-                scan.AddAllTypesOf(typeof(IValidator<>));
 
                 scan.WithDefaultConventions();
             });

@@ -1,6 +1,6 @@
 ﻿
 using System.Text.RegularExpressions;
-using MongoDB.Bson;
+
 namespace System
 {
     public class RavenIdResolver

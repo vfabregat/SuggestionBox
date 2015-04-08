@@ -1,16 +1,25 @@
 ﻿
-using AutoMapper;
-using MediatR;
-using Shrew.Web.DependencyResolution;
-using Shrew.Web.Infrastructure;
-using Shrew.Web.Infrastructure.Mapping;
-using Shrew.Web.Infrastructure.SuggestionsBox;
-using StructureMap;
 using Xunit;
+using Shrew.Web.Infrastructure.SuggestionsBox;
+using Shrew.Web.Infrastructure;
+using MediatR;
+using AutoMapper;
+using StructureMap;
+using Shrew.Infrastructure.Mapping;
+using Shrew.Web.DependencyResolution;
+using Shrew.Web.Infrastructure.Mapping;
 namespace Shrew.Web.Test.Commands
 {
     public class IndexQueryHandlerAsyncTest
     {
+        [Fact]
+        public void IndexQueryHandlerShouldNotReturnUnPublishBoxes()
+        {
+            var queryHandler = new IndexQueryHandler(null);
+
+            Assert.NotNull(queryHandler);
+        }
+
         [Fact]
         public async void IndexQueryHandlerShouldReturnResults()
         {

@@ -61,6 +61,15 @@ namespace Shrew.Web.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to test.
+        /// </summary>
+        public static string AnotheString {
+            get {
+                return ResourceManager.GetString("AnotheString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cancelar.
         /// </summary>
         public static string Cancel {

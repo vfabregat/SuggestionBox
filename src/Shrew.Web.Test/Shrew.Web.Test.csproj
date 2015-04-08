@@ -102,7 +102,7 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Shrew.Web\Shrew.Web.csproj">
+    <ProjectReference Include="..\Shrew.Web\Shrew.Web.csproj">
       <Project>{08f3a801-a588-421c-b2d0-3a91f3373333}</Project>
       <Name>Shrew.Web</Name>
     </ProjectReference>
