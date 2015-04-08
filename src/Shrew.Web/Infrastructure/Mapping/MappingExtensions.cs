@@ -1,9 +1,7 @@
 ﻿namespace Shrew.Infrastructure.Mapping
 {
     using System.Collections.Generic;
-    using System.Data.Entity;
     using System.Linq;
-    using System.Threading.Tasks;
     using AutoMapper;
     using AutoMapper.QueryableExtensions;
     using DelegateDecompiler;
@@ -30,10 +28,10 @@
             return projectionExpression.To<TDestination>().Decompile().ToList();
         }
 
-        public static async Task<List<TDestination>> ToListAsync<TDestination>(this IProjectionExpression projectionExpression)
-        {
-            return await projectionExpression.To<TDestination>()/*.DecompileAsync()*/.ToListAsync();
-        }
+        //public static async Task<List<TDestination>> ToListAsync<TDestination>(this IProjectionExpression projectionExpression)
+        //{
+        //    return await projectionExpression.To<TDestination>()/*.DecompileAsync()*/.ToListAsync();
+        //}
 
         public static IQueryable<TDestination> ToQueryable<TDestination>(this IProjectionExpression projectionExpression)
         {
