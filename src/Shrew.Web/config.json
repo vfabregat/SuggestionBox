@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "Shrew.Web"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-Shrew.Web-9901033d-0643-4112-9446-a3c3f4f3adaf;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}

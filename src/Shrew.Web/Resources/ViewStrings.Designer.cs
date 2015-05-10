@@ -39,7 +39,7 @@ namespace Shrew.Web.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Shrew.Web.Resources.ViewStrings", typeof(ViewStrings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Shrew.Web.Resources.ViewStrings", typeof(ViewStrings).Assembly );
                     resourceMan = temp;
                 }
                 return resourceMan;

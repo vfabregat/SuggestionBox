@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNet.Http.Authentication;
 using Microsoft.AspNet.Identity;
-using Microsoft.Owin.Security;
+using Microsoft.AspNet.Mvc.Rendering;
 
 namespace Shrew.Web.Models
 {
@@ -58,6 +59,7 @@ namespace Shrew.Web.Models
         public string ConfirmPassword { get; set; }
     }
 
+
     public class AddPhoneNumberViewModel
     {
         [Required]
@@ -81,6 +83,6 @@ namespace Shrew.Web.Models
     public class ConfigureTwoFactorViewModel
     {
         public string SelectedProvider { get; set; }
-        public ICollection<System.Web.Mvc.SelectListItem> Providers { get; set; }
+        public ICollection<SelectListItem> Providers { get; set; }
     }
 }

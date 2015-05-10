@@ -1,28 +1,31 @@
-﻿using System.Web.Mvc;
+﻿using Microsoft.AspNet.Mvc;
 
 namespace Shrew.Web.Controllers
 {
     public class HomeController : Controller
     {
-
-        public ActionResult Index()
+        public IActionResult Index()
         {
-
             return View();
         }
 
-        public ActionResult About()
+        public IActionResult About()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public IActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public IActionResult Error()
+        {
+            return View("~/Views/Shared/Error.cshtml");
         }
     }
 }
